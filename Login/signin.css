@@ -1,0 +1,98 @@
+*{
+    padding: 10;
+    margin: 10;
+    font-family: 'poppins' ,sans-serif;
+}
+
+body{
+    background: url('1.png'); no-repeat;
+    background-size: cover;
+}
+.signin{
+    height:100%;
+    width:100%
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.signin h1{
+    font-style: var(#ff7200);
+    text-align:center;
+}
+}
+.social-links{
+    display: flex;
+    justify-content:center;
+    width:100%;
+    height:100%;
+
+}
+.social-links a{
+    width: 110px;
+    height: 80px;
+    text-align:center;
+    text-decoration: none;
+    color: #000;
+    box-shadow: 0 0 30px 20px rgba(0,0,0,0.05);
+    margin: 0 50px;
+    border-radius: 50%;
+    position:relative;
+    overflow: hidden;
+    transition: transform 0.5s;
+    display:inline-block;
+}
+.social-links a .fab{
+    font-size: 30px;
+    line-height: 80px;
+    position:absolute;
+    z-index:10;
+    transition: color 0.5s;
+
+}
+.social-links a::after{
+    width: 100%;
+    height: 100%;
+    top: -90px;
+    left: 0;
+    background: linear-gradient(-45deg,#ed1c94,#ffec17)
+    position:relative;
+    transition: 0.5s;
+    align:center;
+    padding: 0 10px;
+    display:flex;
+    justify-content:center;
+}
+.social-links a:hover::after{
+    top:0;
+}
+.social-links a:hover .fab{
+    color: #fff;
+}
+.social-links a:hover{
+    transform: translateY(-10px);
+}
+.register{
+   width:100%;
+   height:100%;
+   justify-content:center;
+   display:flex; 
+}
+.register button{
+    font-size: 18px;
+    font-weight: bold;
+    margin: 20px 0;
+    width: 50%;
+    padding: 10px 15px;
+    border-radius: 5px
+    border: 3px;   
+}
+.register input{
+    font-size: 16px;
+    width: 100%;
+    padding: 15px 15px;
+    border: 0;
+    outline: greenyellow;
+    border-radius: 5px;
+}
